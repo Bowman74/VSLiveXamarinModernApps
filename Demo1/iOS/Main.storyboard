@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6750" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6735"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" sceneMemberID="viewController" customClass="LoginViewController" storyboardIdentifier="LoginViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="User Id:" lineBreakMode="tailTruncation" minimumFontSize="10" id="7" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="45" y="111" width="72" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="8" firstItem="7" firstAttribute="height" constant="21"/>
+                                    <constraint id="9" firstItem="7" firstAttribute="width" constant="72"/>
+                                </constraints>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="12" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="45" y="156" width="517" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <constraints>
+                                    <constraint id="13" firstItem="12" firstAttribute="height" constant="30"/>
+                                </constraints>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Password:" lineBreakMode="tailTruncation" minimumFontSize="10" id="17" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="45" y="218" width="93" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="18" firstItem="17" firstAttribute="width" constant="93"/>
+                                    <constraint id="19" firstItem="17" firstAttribute="height" constant="21"/>
+                                </constraints>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="22" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="43" y="269" width="519" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <constraints>
+                                    <constraint id="23" firstItem="22" firstAttribute="height" constant="30"/>
+                                </constraints>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="27" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="241" y="418" width="118" height="30"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <constraints>
+                                    <constraint id="29" firstItem="27" firstAttribute="height" constant="30"/>
+                                    <constraint id="30" firstItem="27" firstAttribute="width" constant="118"/>
+                                </constraints>
+                                <connections/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint id="10" firstItem="7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="45"/>
+                            <constraint id="11" firstItem="7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="91"/>
+                            <constraint id="14" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="12" secondAttribute="trailing" constant="38"/>
+                            <constraint id="15" firstItem="12" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="45"/>
+                            <constraint id="16" firstItem="12" firstAttribute="top" secondItem="7" secondAttribute="centerY" constant="34"/>
+                            <constraint id="20" firstItem="17" firstAttribute="top" secondItem="12" secondAttribute="bottom" constant="32"/>
+                            <constraint id="21" firstItem="17" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="45"/>
+                            <constraint id="24" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="22" secondAttribute="trailing" constant="38"/>
+                            <constraint id="25" firstItem="22" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="43"/>
+                            <constraint id="26" firstItem="22" firstAttribute="top" secondItem="12" secondAttribute="bottom" constant="83"/>
+                            <constraint id="28" firstItem="27" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX"/>
+                            <constraint id="34" firstItem="27" firstAttribute="top" secondItem="22" secondAttribute="bottom" constant="119"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="txtUserId" destination="12" id="name-outlet-12"/>
+                        <outlet property="txtPassword" destination="22" id="name-outlet-22"/>
+                        <outlet property="btnLogin" destination="27" id="name-outlet-27"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <scene sceneID="129">
+            <objects>
+                <viewController id="130" sceneMemberID="viewController" customClass="MainViewController" storyboardIdentifier="MainViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="127"/>
+                        <viewControllerLayoutGuide type="bottom" id="128"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="131">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="88" sectionHeaderHeight="22" sectionFooterHeight="22" id="144" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="20" width="560" height="560"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="145" rowHeight="88" customClass="PollCell" restorationIdentifier="PollCell" reuseIdentifier="PollCell">
+                                        <rect key="frame" x="0.0" y="22" width="560" height="88"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="146" tableViewCell="145">
+                                            <rect key="frame" x="0.0" y="0.0" width="560" height="87.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Poll Question" lineBreakMode="tailTruncation" minimumFontSize="10" id="163" translatesAutoresizingMaskIntoConstraints="NO">
+                                                    <rect key="frame" x="10" y="14" width="524" height="21"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <constraints>
+                                                        <constraint id="166" firstItem="163" firstAttribute="height" constant="21"/>
+                                                    </constraints>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Number of Responses: " lineBreakMode="tailTruncation" minimumFontSize="10" id="173" translatesAutoresizingMaskIntoConstraints="NO">
+                                                    <rect key="frame" x="10" y="53" width="153" height="21"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <constraints>
+                                                        <constraint id="174" firstItem="173" firstAttribute="height" constant="21"/>
+                                                        <constraint id="193" firstItem="173" firstAttribute="width" constant="153"/>
+                                                    </constraints>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Responses" lineBreakMode="tailTruncation" minimumFontSize="10" id="178" translatesAutoresizingMaskIntoConstraints="NO">
+                                                    <rect key="frame" x="187" y="53" width="373" height="21"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <constraints>
+                                                        <constraint id="182" firstItem="178" firstAttribute="height" constant="21"/>
+                                                    </constraints>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint id="165" firstItem="146" firstAttribute="trailing" secondItem="163" secondAttribute="trailing" constant="26"/>
+                                                <constraint id="167" firstItem="163" firstAttribute="top" secondItem="146" secondAttribute="top" constant="14"/>
+                                                <constraint id="176" firstItem="173" firstAttribute="top" secondItem="163" secondAttribute="bottom" constant="18"/>
+                                                <constraint id="180" firstItem="178" firstAttribute="centerY" secondItem="173" secondAttribute="centerY"/>
+                                                <constraint id="181" firstItem="178" firstAttribute="trailing" secondItem="146" secondAttribute="trailing"/>
+                                                <constraint id="188" firstItem="178" firstAttribute="leading" secondItem="173" secondAttribute="trailing" constant="24"/>
+                                                <constraint id="191" firstItem="163" firstAttribute="leading" secondItem="146" secondAttribute="leading" constant="10"/>
+                                                <constraint id="192" firstItem="173" firstAttribute="leading" secondItem="146" secondAttribute="leading" constant="10"/>
+                                            </constraints>
+                                        </view>
+                                        <connections>
+                                            <outlet property="lblPollQuestion" destination="163" id="name-outlet-163"/>
+                                            <outlet property="lblPollResponses" destination="178" id="name-outlet-178"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <constraints>
+                            <constraint id="152" firstItem="144" firstAttribute="leading" secondItem="131" secondAttribute="leading" constant="20"/>
+                            <constraint id="153" firstItem="131" firstAttribute="trailing" secondItem="144" secondAttribute="trailing" constant="20"/>
+                            <constraint id="154" firstItem="144" firstAttribute="bottom" secondItem="128" secondAttribute="top" constant="1"/>
+                            <constraint id="158" firstItem="144" firstAttribute="top" secondItem="131" secondAttribute="top" constant="20"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tblPolls" destination="144" id="name-outlet-144"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="132" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="678" y="4"/>
+        </scene>
+    </scenes>
+</document>

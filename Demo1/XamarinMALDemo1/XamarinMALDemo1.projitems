@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{A9A086DB-86CE-4D95-871F-D009EA6D505F}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>XamarinMALDemo1</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)ViewModels\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Interfaces\IPoll.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interfaces\IPollService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Poll.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\PollService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ValueConverters\NumberConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\LoginViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\BaseViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)App.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interfaces\ILoginService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\LoginService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\MainViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interfaces\IUserDialogService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interfaces\INetworkService.cs" />
+  </ItemGroup>
+</Project>

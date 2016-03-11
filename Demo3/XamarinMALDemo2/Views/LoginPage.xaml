@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:XamarinMALDemo3.Controls;assembly=XamarinMALDemo3"
+             x:Class="XamarinMALDemo3.Views.LoginPage"
+             Padding="10, 0, 10, 0">
+    <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Label Text="User Id:" Grid.Column="0" Grid.Row="1" HorizontalOptions="Start" />
+        <Entry Text="{Binding UserId, Mode=TwoWay}" Grid.Column="0" Grid.Row="2" HorizontalOptions="FillAndExpand" />
+        <Label Text="Password:" Grid.Column="0" Grid.Row="3" HorizontalOptions="Start" />
+        <Entry Text="{Binding Password, Mode=TwoWay}" IsPassword="True" Grid.Column="0" Grid.Row="4" HorizontalOptions="FillAndExpand" />
+        <controls:GradientButton Command="{Binding LoginCommand}" Text="Login" Grid.Column="0" Grid.Row="6" WidthRequest="75" HorizontalOptions="Center" StartGradientColor="#e5a610" EndGradientColor="#fbc74a" />
+    </Grid>
+</ContentPage>

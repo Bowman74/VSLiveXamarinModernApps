@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:XamarinMALDemo3.Controls;assembly=XamarinMALDemo3"
+             xmlns:valueConverters="clr-namespace:XamarinMALDemo3.ValueConverters;assembly=XamarinMALDemo3"
+             x:Class="XamarinMALDemo3.Views.MainPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <valueConverters:NumberConverter x:Key="numberConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <controls:TapListView CachingStrategy="RecycleElement" ItemsSource="{Binding Polls}" ItemTappedCommand="{Binding IncrementPollCommand}" RowHeight="60" >
+        <controls:TapListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Padding="5">
+                        <Label HorizontalOptions="FillAndExpand" VerticalOptions="Fill" Text="{Binding PollQuestion}" FontSize="16"></Label>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Fill">
+                            <Label HorizontalOptions="Fill" VerticalOptions="Fill" Text="Number of Responses:" FontSize="12"></Label>
+                            <Label HorizontalOptions="FillAndExpand" VerticalOptions="Fill" Text="{Binding NumberResponses, Converter={StaticResource numberConverter}}" FontSize="12"></Label>
+                        </StackLayout>
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </controls:TapListView.ItemTemplate>
+    </controls:TapListView>
+</ContentPage>
