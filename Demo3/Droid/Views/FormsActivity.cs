@@ -12,7 +12,7 @@ namespace XamarinMALDemo3.Droid.Views
     [Activity(Label = "XamarinMALDemo3"
         , Icon = "@mipmap/ic_launcher"
         , ScreenOrientation = ScreenOrientation.Portrait
-        , Theme = "@android:style/Theme.Holo.Light")]
+        , Theme = "@style/MyTheme")]
     public class FormsActivity : ActivityBase
     {
         protected override void OnCreate(Bundle savedInstanceState)

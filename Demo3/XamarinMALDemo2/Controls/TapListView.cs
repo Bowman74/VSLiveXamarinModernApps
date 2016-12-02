@@ -5,8 +5,7 @@ namespace XamarinMALDemo3.Controls
 {
     public class TapListView : ListView
     {
-        public static BindableProperty ItemTappedCommandProperty = BindableProperty.Create<TapListView, ICommand>(x => x.ItemTappedCommand, null);
-
+        public static BindableProperty ItemTappedCommandProperty = BindableProperty.Create(nameof(ItemTappedCommand), typeof(ICommand), typeof(TapListView), null);
 
         public TapListView()
         {

@@ -10,7 +10,7 @@ namespace XamarinMALDemo3
         {
             if (hint is ClearBackstackHint)
             {
-                var mainPage = _mvxFormsApp.MainPage as NavigationPage;
+                var mainPage = Application.Current.MainPage as NavigationPage;
                 if (mainPage != null && mainPage.CurrentPage != null)
                 {
                     var navigation = mainPage.CurrentPage.Navigation;

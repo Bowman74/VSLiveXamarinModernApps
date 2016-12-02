@@ -9,7 +9,7 @@
             <valueConverters:NumberConverter x:Key="numberConverter" />
         </ResourceDictionary>
     </ContentPage.Resources>
-    <controls:TapListView CachingStrategy="RecycleElement" ItemsSource="{Binding Polls}" ItemTappedCommand="{Binding IncrementPollCommand}" RowHeight="60" >
+    <controls:TapListView ItemsSource="{Binding Polls}" ItemTappedCommand="{Binding IncrementPollCommand}" RowHeight="60" >
         <controls:TapListView.ItemTemplate>
             <DataTemplate>
                 <ViewCell>

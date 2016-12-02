@@ -5,18 +5,17 @@ using XamarinMALDemo1.iOS.Views;
 
 namespace XamarinMALDemo1.iOS.Adapters
 {
-    public class PollListAdapter : MvxTableViewSource
+    public class PollListAdapter : MvxSimpleTableViewSource
     {
-        private static readonly string _cellIdentifier = "PollCell";
 
         public PollListAdapter(UITableView tableView)
-            : base(tableView)
+            : base(tableView, typeof(PollCell), null)
         {
         }
 
-        protected override UITableViewCell GetOrCreateCellFor(UITableView tableView, NSIndexPath indexPath, object item)
+        protected override UITableViewCell GetOrCreateCellFor(UITableView tableView, Foundation.NSIndexPath indexPath, object item)
         {
-            var cell = (PollCell)tableView.DequeueReusableCell(_cellIdentifier, indexPath);
+            var cell = (PollCell)tableView.DequeueReusableCell(PollCell.Key, indexPath);
             return cell;
         }
     }

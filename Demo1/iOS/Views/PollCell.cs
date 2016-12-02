@@ -1,21 +1,29 @@
-﻿using System;
+using Foundation;
+using System;
+using UIKit;
 using MvvmCross.Binding.iOS.Views;
-using MvvmCross.Binding.BindingContext;
-using XamarinMALDemo1.Interfaces;
 
 namespace XamarinMALDemo1.iOS.Views
 {
     public partial class PollCell : MvxTableViewCell
     {
-        public PollCell(IntPtr handle) : base (handle)
-		{
+        public static readonly NSString Key = new NSString("PollCellView");
+        public static readonly string bindingText = "PollQuestion PollQuestion; PollResponses NumberResponses, Converter=Number";
+
+        public PollCell (IntPtr handle) : base (bindingText, handle)
+        {
         }
 
-        public override void LayoutSubviews()
+        public string PollQuestion
         {
-            base.LayoutSubviews();
-            this.CreateBinding(lblPollQuestion).For(a => a.Text).To<IPoll>(vm => vm.PollQuestion).Apply();
-            this.CreateBinding(lblPollResponses).For(a => a.Text).To<IPoll>(vm => vm.NumberResponses).WithConversion("Number").Apply();
+            get { return lblPollQuestion.Text; }
+            set { lblPollQuestion.Text = value; }
+        }
+
+        public string PollResponses
+        {
+            get { return lblPollResponses.Text; }
+            set { lblPollResponses.Text = value; }
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using MvvmCross.Core.ViewModels;
+using MvvmCross.Platform;
 using Xamarin.Forms;
 using XamarinMALDemo2.PresentaitonHints;
 
@@ -10,7 +11,7 @@ namespace XamarinMALDemo2
         {
             if (hint is ClearBackstackHint)
             {
-                var mainPage = _mvxFormsApp.MainPage as NavigationPage;
+                var mainPage = Application.Current.MainPage as NavigationPage;
                 if (mainPage != null && mainPage.CurrentPage != null)
                 {
                     var navigation = mainPage.CurrentPage.Navigation;

@@ -4,7 +4,7 @@ namespace XamarinMALDemo3.Controls
 {
     public class GradientButton : Button
     {
-        public static BindableProperty StartGradientColorProperty = BindableProperty.Create<GradientButton, Color>(x => x.StartGradientColor, Color.Transparent);
+        public static BindableProperty StartGradientColorProperty = BindableProperty.Create(nameof(StartGradientColor), typeof(Color), typeof(GradientButton), Color.Transparent);
 
         public Color StartGradientColor
         {
@@ -12,7 +12,7 @@ namespace XamarinMALDemo3.Controls
             set { this.SetValue(StartGradientColorProperty, value); }
         }
 
-        public static BindableProperty EndGradientColorProperty = BindableProperty.Create<GradientButton, Color>(x => x.EndGradientColor, Color.Transparent);
+        public static BindableProperty EndGradientColorProperty = BindableProperty.Create(nameof(EndGradientColor), typeof(Color), typeof(GradientButton), Color.Transparent);
 
         public Color EndGradientColor
         {

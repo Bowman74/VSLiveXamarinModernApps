@@ -11,27 +11,28 @@ using UIKit;
 
 namespace XamarinMALDemo1.iOS.Views
 {
-	[Register ("PollCell")]
-	partial class PollCell
-	{
-		[Outlet]
-		[GeneratedCode ("iOS Designer", "1.0")]
-		UILabel lblPollQuestion { get; set; }
+    [Register ("PollCell")]
+    partial class PollCell
+    {
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel lblPollQuestion { get; set; }
 
-		[Outlet]
-		[GeneratedCode ("iOS Designer", "1.0")]
-		UILabel lblPollResponses { get; set; }
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel lblPollResponses { get; set; }
 
-		void ReleaseDesignerOutlets ()
-		{
-			if (lblPollQuestion != null) {
-				lblPollQuestion.Dispose ();
-				lblPollQuestion = null;
-			}
-			if (lblPollResponses != null) {
-				lblPollResponses.Dispose ();
-				lblPollResponses = null;
-			}
-		}
-	}
+        void ReleaseDesignerOutlets ()
+        {
+            if (lblPollQuestion != null) {
+                lblPollQuestion.Dispose ();
+                lblPollQuestion = null;
+            }
+
+            if (lblPollResponses != null) {
+                lblPollResponses.Dispose ();
+                lblPollResponses = null;
+            }
+        }
+    }
 }

@@ -9,19 +9,21 @@
             <valueConverters:NumberConverter x:Key="numberConverter" />
         </ResourceDictionary>
     </ContentPage.Resources>
-    <controls:TapListView CachingStrategy="RecycleElement" ItemsSource="{Binding Polls}" ItemTappedCommand="{Binding IncrementPollCommand}" RowHeight="60" >
-        <controls:TapListView.ItemTemplate>
-            <DataTemplate>
-                <ViewCell>
-                    <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Padding="5">
-                        <Label HorizontalOptions="FillAndExpand" VerticalOptions="Fill" Text="{Binding PollQuestion}" FontSize="16"></Label>
-                        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Fill">
-                            <Label HorizontalOptions="Fill" VerticalOptions="Fill" Text="Number of Responses:" FontSize="12"></Label>
-                            <Label HorizontalOptions="FillAndExpand" VerticalOptions="Fill" Text="{Binding NumberResponses, Converter={StaticResource numberConverter}}" FontSize="12"></Label>
+	<Grid x:Name="mainLayout" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+        <controls:TapListView ItemsSource="{Binding Polls}" ItemTappedCommand="{Binding IncrementPollCommand}" RowHeight="60" >
+            <controls:TapListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Padding="5">
+                            <Label HorizontalOptions="FillAndExpand" VerticalOptions="Fill" Text="{Binding PollQuestion}" FontSize="16"></Label>
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Fill">
+                                <Label HorizontalOptions="Fill" VerticalOptions="Fill" Text="Number of Responses:" FontSize="12"></Label>
+                                <Label HorizontalOptions="FillAndExpand" VerticalOptions="Fill" Text="{Binding NumberResponses, Converter={StaticResource numberConverter}}" FontSize="12"></Label>
+                            </StackLayout>
                         </StackLayout>
-                    </StackLayout>
-                </ViewCell>
-            </DataTemplate>
-        </controls:TapListView.ItemTemplate>
-    </controls:TapListView>
+                    </ViewCell>
+                </DataTemplate>
+            </controls:TapListView.ItemTemplate>
+        </controls:TapListView>
+	</Grid>
 </ContentPage>
