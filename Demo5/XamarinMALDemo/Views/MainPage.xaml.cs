@@ -1,6 +1,8 @@
 ﻿
 using Xamarin.Forms;
 using System;
+using MvvmCross.Platform;
+using XamarinMALDemo.Interfaces;
 
 #if __ANDROID__
 using Xamarin.Forms.Platform.Android;
