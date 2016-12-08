@@ -3587,9 +3587,6 @@ namespace XamarinMALDemo3.Droid
 			// aapt resource value: 0x7f0a0172
 			public const int MyTheme = 2131362162;
 			
-			// aapt resource value: 0x7f0a0173
-			public const int MyTheme_Base = 2131362163;
-			
 			// aapt resource value: 0x7f0a0047
 			public const int Platform_AppCompat = 2131361863;
 			

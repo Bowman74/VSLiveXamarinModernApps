@@ -5,7 +5,7 @@ using XamarinMALDemo3.Droid.Services;
 
 namespace XamarinMALDemo3.Droid.Views
 {
-    public class ActivityBase : FormsAppCompatActivity
+    public class ActivityBase : FormsApplicationActivity
     {
         protected override void OnResume()
         {

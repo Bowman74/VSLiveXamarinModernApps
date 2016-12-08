@@ -52,6 +52,7 @@ namespace XamarinMALDemo1.ViewModels
             if (!NetworkService.HasNetworkConnection())
             {
                 UserDialogService.ShowMessage("Network Error", "There is currently no network available to login.");
+                return false;
             }
 
             // Do some login action, just simulate for demo
