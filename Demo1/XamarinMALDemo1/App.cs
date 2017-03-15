@@ -15,7 +15,7 @@ namespace XamarinMALDemo1
 
         public override void Initialize()
         {
-            Mvx.RegisterSingleton<IMvxAppStart>(new MvxAppStart<LoginViewModel>());
+            //Mvx.RegisterSingleton<IMvxAppStart>(new MvxAppStart<LoginViewModel>());
             Mvx.RegisterType<ILoginService, LoginService>();
             Mvx.RegisterType<IPollService, PollService>();
             RegisterAppStart<LoginViewModel>();

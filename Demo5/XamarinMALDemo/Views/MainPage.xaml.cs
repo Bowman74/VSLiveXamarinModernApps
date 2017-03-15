@@ -23,13 +23,7 @@ namespace XamarinMALDemo.Views
 
 #if __ANDROID__
             NativeViewWrapper actionButtonView = null;
-            foreach (var control in mainLayout.Children)
-            {
-                if (control is NativeViewWrapper && ((NativeViewWrapper)control).NativeView is FloatingActionButton)
-                {
-                    actionButtonView = (NativeViewWrapper)control;
-                }
-            }
+            actionButtonView = (NativeViewWrapper)fabParent.Content;
             if (actionButtonView != null)
             {
                 var actionButton = (FloatingActionButton)actionButtonView.NativeView;

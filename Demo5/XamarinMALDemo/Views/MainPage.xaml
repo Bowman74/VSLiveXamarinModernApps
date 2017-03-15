@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:controls="clr-namespace:XamarinMALDemo.Controls;assembly=XamarinMALDemo"
@@ -27,14 +27,17 @@
                 </DataTemplate>
             </controls:TapListView.ItemTemplate>
         </controls:TapListView>
-		<androidWidget:FloatingActionButton Click="fab_click" x:Arguments="{x:Static formsandroid:Forms.Context}" 
+		<ContentView x:Name="fabParent" HorizontalOptions="Center" VerticalOptions="EndAndExpand"
 			RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent,
                                     Property=Width,
                                     Factor=1,
-                                    Constant=-72}"
+                                    Constant=-100}"
             RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent,
                                     Property=Height,
                                     Factor=1,
-                                    Constant=-72}"/>
+                                    Constant=-100}">
+			<androidWidget:FloatingActionButton Click="fab_click" x:Arguments="{x:Static formsandroid:Forms.Context}"/>
+		</ContentView>
+		
 	</RelativeLayout>
 </ContentPage>
