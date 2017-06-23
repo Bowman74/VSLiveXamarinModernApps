@@ -44,7 +44,7 @@
     <MtouchUseSGen>true</MtouchUseSGen>
     <CodesignKey>iPhone Developer</CodesignKey>
     <MtouchUseRefCounting>true</MtouchUseRefCounting>
-<AssemblyName>XamarinMALDemo</AssemblyName>
+    <AssemblyName>XamarinMALDemo</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>full</DebugType>
@@ -80,7 +80,7 @@
     <CodesignProvision>2b873a33-da1d-457d-86d3-335c09c5928a</CodesignProvision>
     <CodesignResourceRules />
     <CodesignExtraArgs />
-<AssemblyName>XamarinMALDemo</AssemblyName>
+    <AssemblyName>XamarinMALDemo</AssemblyName>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -164,15 +164,25 @@
     <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json">
       <InProject>false</InProject>
     </ImageAsset>
-    <ImageAsset Include="Resources\Images.xcassets\Add.imageset\Contents.json" />
-    <ImageAsset Include="Resources\Images.xcassets\Add.imageset\ic_add_white.png" />
-    <ImageAsset Include="Resources\Images.xcassets\Add.imageset\ic_add_white_2x.png" />
-    <ImageAsset Include="Resources\Images.xcassets\Add.imageset\ic_add_white_3x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\Add.imageset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Add.imageset\ic_add_white.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Add.imageset\ic_add_white_2x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Add.imageset\ic_add_white_3x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
     <None Include="Entitlements.plist" />
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
@@ -183,10 +193,7 @@
     <Compile Include="Setup.cs" />
     <Compile Include="ViewPresenter.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Resources\" />
-    <Folder Include="Resources\Images.xcassets\Add.imageset\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="..\XamarinMALDemo\XamarinMALDemo.projitems" Label="Shared" Condition="Exists('..\XamarinMALDemo\XamarinMALDemo.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.3.3.193\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.3.3.193\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />
